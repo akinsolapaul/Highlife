@@ -1,0 +1,159 @@
+.main-content   {
+    padding: 2rem 10rem;
+
+    @media screen and (max-width: $bp-large)    {
+        padding: 2rem 0;
+    }
+}
+
+
+
+.filter    {
+
+    &__text   {
+        font-family: $karlaB;
+    }
+}
+
+.categories {
+    font-family: $karlaB;
+    font-size: 1.7rem;
+    background-color: $grey-light-one;
+
+    &__list--head   {
+        color: $green-light-two;
+        margin-top: 1.7rem;
+    }
+
+    &__list--one {
+       
+    }
+
+    &__list--two {
+       
+    }
+
+    
+}
+
+
+.mailing    {
+    
+    &__text--one    {
+        margin-top: 15rem;
+        font-family: $playfairB;
+        font-size: 3.5rem;
+        color: $color-black-two;
+    }
+
+    &__text--two {
+        font-family: $oswaldR;
+        font-size: 2rem;
+        color: $grey-dark;
+    }
+
+    &__sub  {
+        // display: grid;
+        // grid-template-rows: 1fr;
+        // grid-template-columns: repeat(4, 1fr);
+        // grid-gap: 0;
+    }
+
+    &__form {
+        // grid-column: 2 / 4;
+
+
+        input:focus {
+            border: 2px solid $color-black-one;
+            box-shadow: none;
+        }
+    }
+}
+
+///// SIDEBAR 
+.side   {
+
+
+    &__head {
+        font-family: $oswaldR;
+        font-size: 4rem;
+        padding-bottom: .5rem;
+        margin-bottom: 2rem;
+        //border-bottom: 3px solid $color-black-one;
+        text-decoration: underline;
+    }
+
+    &--one  {
+        background-color: $grey-light-one;
+
+        &__img  {
+            background-image: url(../../img/niara-8.png);
+            max-width: 100%;
+            height: 17rem;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &__ng   {
+            font-family: $karlaSB;
+            font-size: 2rem;
+        }
+
+        &__music    {
+            font-family: $karlaBI;
+            color: $green-light-two;
+            font-size: 1.5rem;
+        }
+    }
+
+    &--two  {
+        background-color: $grey-light-one;
+
+        &__title    {
+            font-size: 1.5rem;
+            font-family: $karlaSB;
+
+        }
+
+        &__date {
+            color: $green-light-two;
+            font-family: $karlaI;
+            font-size: 1.4rem;
+        }
+
+        &__events   {
+            color: $green-light-three;
+            font-family: $karlaBI;
+            font-size: 1.9rem;
+        }
+    }
+
+    &--three    {
+
+        &__img  {
+            
+            &--alpha    {
+                background-image: url(../../img/niara-10.png);
+                background-position: center;
+                max-width: 100%;
+                height: 15rem;
+                background-size: cover;
+            }
+
+            &--beta {
+                background-image: url(../../img/niara-11.png);
+                background-position: bottom;
+                max-width: 100%;
+                height: 15rem;
+                background-size: cover;
+            }
+        }
+
+        &__text {
+            font-family: $karlaSB;
+        }
+    }
+}
+
+
+

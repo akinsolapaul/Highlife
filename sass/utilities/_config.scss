@@ -1,0 +1,103 @@
+// Font Stacks
+
+//$font-url : 'https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Playfair+Display:700';
+
+@mixin do-font-face($name, $file-name, $url, $type, $weight, $style){
+  @font-face {
+    font-family: $name;
+    //src: url(#{$url + $file-name}.eot);
+    //src: url(#{$url + $file-name}.eot?#iefix) format('embedded-opentype');
+    @if $type == "otf"{
+      src: url(#{$url + $file-name}.otf) format('opentype');
+    }
+    @if $type == "ttf"{
+      src: url(#{$url + $file-name}.ttf) format('truetype');
+    }
+    @if $type == "woff"{
+      src: url(#{$url + $file-name}.woff);
+    }
+    @if $type == "woff2"{
+      src: url(#{$url + $file-name}.woff2);
+    }
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+
+
+
+@include do-font-face('karlaR', 'Karla-Regular', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('playfairB', 'Karla-Bold', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('karlaSB', 'Karla-SemiBold', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('karlaEB', 'Karla-ExtraBold', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('karlaI', 'Karla-Italic', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('karlaBI', 'Karla-BoldItalic', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('playfairB', 'PlayfairDisplay-Bold', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('richie', 'Richie-Brusher', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('oswaldL', 'Oswald-Light', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('oswaldR', 'Oswald-Regular', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('oswaldB', 'Oswald-Bold', '../fonts/', 'ttf', normal, normal);
+
+@include do-font-face('Roboto', 'Roboto-Bold', '../fonts/', 'ttf', bold, normal);
+@include do-font-face('DDIN', 'D-DIN', '../fonts/', 'otf', normal, normal);
+@include do-font-face('DDIN', 'D-DIN-Bold', '../fonts/', 'otf', bold, normal);
+@include do-font-face('Quicksand', 'Quicksand-Regular', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('Quicksand', 'Quicksand-Medium', '../fonts/', 'ttf', 500, normal);
+
+
+
+$firasans : 'sans-serif';
+
+$richie         : 'richie', sans-serif;
+$karlaR         : 'karlaR', sans-serif;
+$karlaB         : 'karlaB', sans-serif;
+$karlaSB        : 'karlaSB', sans-serif;
+$karlaEB        : 'karlaEB', sans-serif;
+$karlaI         : 'karlaI', sans-serif;
+$karlaBI        : 'karlaBI', sans-serif;
+$playfairB      : 'playfairB', sans-serif;
+$oswaldL        : 'oswaldL', sans-serif;
+$oswaldR        : 'oswaldR', sans-serif;
+$oswaldB        : 'oswaldB', sans-serif;
+
+$roboto         : 'Roboto', sans-serif;
+$ddin           : 'DDIN', sans-serif;
+$quicksand      : 'Quicksand', sans-serif;
+
+$ffh            : $firasans;
+$ffb            : $firasans;
+
+// @font-face {
+//   font-family: $firasans;
+//   src: url('../fonts/') format('truetype');
+// }
+
+$normal         : normal;
+$bold           : bold;
+$extra-bold     : bolder;
+$light          : 100;
+
+// Colors
+
+
+
+$color-white      : #fff;
+
+$grey-light-one   : #f5f5f5;
+
+$grey-dark        : #7b7b7b; //join our
+
+$green-light-one  : #64c895;
+$green-light-two  : #10d869;
+$green-light-three: #00a650; //view
+$color-gold       : #f4ae17;
+//$colblack-one  : #28c56e
+
+$pink-one         : #ff0088;
+
+$color-black-one      : #141414;
+$color-black-two      : #111111;
+
+
+

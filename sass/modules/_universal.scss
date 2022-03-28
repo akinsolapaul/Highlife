@@ -1,0 +1,97 @@
+.sales   {
+
+
+    &__sub  {
+        
+    
+
+        &--alpha    {
+            background-color: $grey-light-one;
+            height: 26rem;
+            position: relative;
+        }
+
+        &--title    {
+            font-family: $karlaB;
+            font-size: 2rem;
+        }
+
+        &--price   {
+            color: $green-light-two;
+            font-family: $oswaldL;
+        }
+
+        &--cart {
+            font-family: $karlaB;
+            font-size: 1.7rem;
+            color: $green-light-two;
+            opacity: 0;
+            transform: translateY(-3.5rem);
+    
+            &--svg  {
+                height: 1.6rem;
+                margin-top: -.4rem;
+                filter: invert(69%) sepia(24%) saturate(5791%) hue-rotate(98deg) brightness(102%) contrast(87%);
+            }
+        }
+
+        &--view {
+            font-size: 3rem;
+            color: $color-white;
+            background-color: $green-light-three;
+            opacity: 0;
+    
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover &--alpha   {
+            border: 2px solid $green-light-two;
+        }
+
+        &:hover &--cart   {
+            opacity: 1;
+            transition: all .2s;
+        }
+    
+        &:hover &--price   {
+            opacity: 0;
+            transition: all .2s;
+        }
+    
+        &:hover &--view   {
+            opacity: 1;
+            transition: all .2s;
+        }
+        
+        &:hover &--img {
+            opacity: 0.1;
+            transform: scale(1.2);
+            transition: all .2s;
+        }
+
+        a   {
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.svg-green  {
+    filter: invert(69%) sepia(24%) saturate(5791%) hue-rotate(98deg) brightness(102%) contrast(87%);
+}
+
+.text-black {
+    color: $color-black-two;
+}

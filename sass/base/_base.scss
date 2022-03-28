@@ -1,0 +1,18 @@
+html, body {
+  //overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+ body {
+    font-size: 1.8rem;
+    font-family: $karlaR;
+ }
+
+
+// RESPONSIVE BREKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px i.e 800/16
+$bp-small: 37.5em; // 600px i.e 600/16
+
+

@@ -1,0 +1,24 @@
+.sign-up-btn    {
+   font-size: 1.3rem;
+   border-radius: 0;
+   padding: .1rem .8rem;
+}
+
+
+.header__button {
+    background-color: $pink-one;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-left: .5rem;
+    border-radius: 0;
+    padding: .3rem 3rem;
+
+    &:hover{
+        color: $color-white;
+        opacity: .8;
+    }
+}
+
+
