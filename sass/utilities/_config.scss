@@ -26,7 +26,7 @@
 
 
 
-
+@include do-font-face('karlaEL', 'Karla-ExtraLight', '../fonts/', 'ttf', normal, normal);
 @include do-font-face('karlaR', 'Karla-Regular', '../fonts/', 'ttf', normal, normal);
 @include do-font-face('playfairB', 'Karla-Bold', '../fonts/', 'ttf', normal, normal);
 @include do-font-face('karlaSB', 'Karla-SemiBold', '../fonts/', 'ttf', normal, normal);
@@ -50,6 +50,7 @@
 $firasans : 'sans-serif';
 
 $richie         : 'richie', sans-serif;
+$karlaEL        : 'karlaEL', sans-serif;
 $karlaR         : 'karlaR', sans-serif;
 $karlaB         : 'karlaB', sans-serif;
 $karlaSB        : 'karlaSB', sans-serif;

@@ -2,18 +2,26 @@
 
     &-item {
 
-        @media only screen and (max-width: $bp-large)   {
+        @include media (medium)  {
             margin: 0;
+            padding: 0;
             font-size: 1rem;
         }
     }
 
     &-link  {
-        font-family: $karlaEB;
+        font-family: $karlaSB;
         color: $color-black-one !important;
+        transition: all .2s;
 
         &:hover  {
             border-bottom: 3px solid #000;
+        }
+
+        @include media (medium)  {
+           // padding: .1rem !important;
+            margin: 0 !important;
+            line-height: 1;
         }
     }
 
@@ -26,20 +34,17 @@
         height: 5rem;
     }
 
-    // &-search{
-    //     filter: invert(69%) sepia(24%) saturate(5791%) hue-rotate(98deg) brightness(102%) contrast(87%);
-    // }
 
-    @media only screen and (max-width: $bp-largest)  {
+    @include media (medium)  {
         font-size: 1.2rem;
     }
 
-    @media only screen and (max-width: $bp-large)  {
+    @include media (desktop)   {
        // font-size: 0.5rem;
     }
 }
 
 .active {
-    border-bottom: 4px solid #000;
+    border-bottom: 3px solid #000;
 }
 

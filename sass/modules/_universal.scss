@@ -1,97 +1,105 @@
-.sales   {
+section {
+  &.church {
+      padding: 0;
+    .church-text-1 {
+      font-size: 1.2rem;
+      letter-spacing: -1px;
+    }
 
+    .church-text-2 {
+      line-height: 1.6;
+      font-family: $karlaEL;
+      letter-spacing: 1px;
+    }
+  }
 
-    &__sub  {
+  &.church-body {
+    margin: 0 19rem;
+
+    @include media (tablet) {
+        margin: 0;
+    }
+
+    .test {
+
+      img {
+        height: 15rem;
+        object-fit: cover;
         
-    
 
-        &--alpha    {
-            background-color: $grey-light-one;
-            height: 26rem;
-            position: relative;
+        &:hover {
+            border: 3px solid $green-light-three;
+            opacity: 0.3;
+            transition: all 0.5s;
         }
+      }
 
-        &--title    {
-            font-family: $karlaB;
-            font-size: 2rem;
-        }
+      &:hover .now-playing {
+        opacity: 1;
+        transition: all 0.5s;
+      }
+    }
 
-        &--price   {
-            color: $green-light-two;
-            font-family: $oswaldL;
-        }
+    .karla-b {
+      font-family: $karlaSB;
+    }
 
-        &--cart {
-            font-family: $karlaB;
-            font-size: 1.7rem;
-            color: $green-light-two;
-            opacity: 0;
-            transform: translateY(-3.5rem);
-    
-            &--svg  {
-                height: 1.6rem;
-                margin-top: -.4rem;
-                filter: invert(69%) sepia(24%) saturate(5791%) hue-rotate(98deg) brightness(102%) contrast(87%);
-            }
-        }
+    .now-playing {
+      opacity: 0;
+    }
+  }
+}
 
-        &--view {
-            font-size: 3rem;
-            color: $color-white;
-            background-color: $green-light-three;
-            opacity: 0;
-    
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
 
-        &:hover &--alpha   {
-            border: 2px solid $green-light-two;
-        }
+.dropdown-qty   {
+    width: 5rem;
 
-        &:hover &--cart   {
-            opacity: 1;
-            transition: all .2s;
-        }
-    
-        &:hover &--price   {
-            opacity: 0;
-            transition: all .2s;
-        }
-    
-        &:hover &--view   {
-            opacity: 1;
-            transition: all .2s;
-        }
-        
-        &:hover &--img {
-            opacity: 0.1;
-            transform: scale(1.2);
-            transition: all .2s;
-        }
-
-        a   {
-            text-decoration: none;
-        }
+    .dropdown-qty-no    {
+        color: green;
     }
 }
 
+.green {
+    height: 4px;
+    width: 12rem;
+    background-color: $green-light-three;
+    margin: 0 auto;
+  }
 
+.svg-green {
+  filter: invert(69%) sepia(24%) saturate(5791%) hue-rotate(98deg)
+    brightness(102%) contrast(87%);
+}
 
+.svg-white {
+  filter: invert(100%) sepia(0%) saturate(17%) hue-rotate(20deg)
+    brightness(106%) contrast(106%);
+}
 
+.svg-small {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 
-
-
-
-
-
-
-.svg-green  {
-    filter: invert(69%) sepia(24%) saturate(5791%) hue-rotate(98deg) brightness(102%) contrast(87%);
+.text-green {
+  color: $green-light-two;
 }
 
 .text-black {
-    color: $color-black-two;
+  color: $color-black-two;
 }
+
+///////// BACKGROUNDS
+.bg-grey  {
+  background-color: $grey-light-one;
+}
+
+.bg-green {
+  background-color: $green-light-three;
+}
+
+.bg-black {
+  background-color: $color-black-two;
+}
+
+

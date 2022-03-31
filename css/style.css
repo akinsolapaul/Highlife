@@ -1,4 +1,10 @@
 @font-face {
+  font-family: "karlaEL";
+  src: url(../fonts/Karla-ExtraLight.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: "karlaR";
   src: url(../fonts/Karla-Regular.ttf) format("truetype");
   font-weight: normal;
@@ -298,89 +304,12 @@ body {
 
 .main-content {
   padding: 2rem 10rem; }
-  @media screen and (max-width: 62.5em) {
+  @media screen and (max-width: 576px) {
     .main-content {
       padding: 2rem 0; } }
-
-.filter__text {
-  font-family: "karlaB", sans-serif; }
-
-.categories {
-  font-family: "karlaB", sans-serif;
-  font-size: 1.7rem;
-  background-color: #f5f5f5; }
-  .categories__list--head {
-    color: #10d869;
-    margin-top: 1.7rem; }
-
-.mailing__text--one {
-  margin-top: 15rem;
-  font-family: "playfairB", sans-serif;
-  font-size: 3.5rem;
-  color: #111111; }
-
-.mailing__text--two {
-  font-family: "oswaldR", sans-serif;
-  font-size: 2rem;
-  color: #7b7b7b; }
-
-.mailing__form input:focus {
-  border: 2px solid #141414;
-  box-shadow: none; }
-
-.side__head {
-  font-family: "oswaldR", sans-serif;
-  font-size: 4rem;
-  padding-bottom: .5rem;
-  margin-bottom: 2rem;
-  text-decoration: underline; }
-
-.side--one {
-  background-color: #f5f5f5; }
-  .side--one__img {
-    background-image: url(../../img/niara-8.png);
-    max-width: 100%;
-    height: 17rem;
-    background-position: center;
-    background-size: cover; }
-  .side--one__ng {
-    font-family: "karlaSB", sans-serif;
-    font-size: 2rem; }
-  .side--one__music {
-    font-family: "karlaBI", sans-serif;
-    color: #10d869;
-    font-size: 1.5rem; }
-
-.side--two {
-  background-color: #f5f5f5; }
-  .side--two__title {
-    font-size: 1.5rem;
-    font-family: "karlaSB", sans-serif; }
-  .side--two__date {
-    color: #10d869;
-    font-family: "karlaI", sans-serif;
-    font-size: 1.4rem; }
-  .side--two__events {
-    color: #00a650;
-    font-family: "karlaBI", sans-serif;
-    font-size: 1.9rem; }
-
-.side--three__img--alpha {
-  background-image: url(../../img/niara-10.png);
-  background-position: center;
-  max-width: 100%;
-  height: 15rem;
-  background-size: cover; }
-
-.side--three__img--beta {
-  background-image: url(../../img/niara-11.png);
-  background-position: bottom;
-  max-width: 100%;
-  height: 15rem;
-  background-size: cover; }
-
-.side--three__text {
-  font-family: "karlaSB", sans-serif; }
+  @media screen and (max-width: 1200px) {
+    .main-content {
+      padding: 0; } }
 
 .sales__sub--alpha {
   background-color: #f5f5f5;
@@ -388,7 +317,7 @@ body {
   position: relative; }
 
 .sales__sub--title {
-  font-family: "karlaB", sans-serif;
+  font-family: "karlaSB", sans-serif;
   font-size: 2rem; }
 
 .sales__sub--price {
@@ -439,22 +368,265 @@ body {
 .sales__sub a {
   text-decoration: none; }
 
+.filter__text {
+  font-family: "karlaB", sans-serif; }
+
+.categories {
+  font-family: "karlaSB", sans-serif;
+  font-size: 1.7rem;
+  background-color: #f5f5f5; }
+  .categories__list--head {
+    color: #10d869;
+    margin-top: 1.7rem; }
+
+.mailing__text--one {
+  margin-top: 10rem;
+  font-family: "playfairB", sans-serif;
+  font-size: 3rem;
+  color: #111111; }
+
+.mailing__text--two {
+  font-family: "oswaldR", sans-serif;
+  font-size: 2rem;
+  color: #7b7b7b; }
+
+.mailing__form input:focus {
+  border: 2px solid #141414;
+  box-shadow: none; }
+
+.side__head {
+  font-family: "oswaldR", sans-serif;
+  font-size: 4rem;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  margin-bottom: 2rem;
+  border-bottom: 4px solid #141414;
+  width: 44%;
+  margin: auto; }
+
+.side--one {
+  background-color: #f5f5f5; }
+  .side--one__img {
+    background-image: url(../../img/niara-8.png);
+    max-width: 100%;
+    height: 15rem;
+    background-position: center;
+    background-size: cover;
+    margin-top: 1.5rem; }
+  .side--one__ng {
+    font-family: "karlaSB", sans-serif;
+    font-size: 2rem; }
+  .side--one__music {
+    font-family: "karlaBI", sans-serif;
+    color: #10d869;
+    font-size: 1.5rem; }
+
+.side--two {
+  background-color: #f5f5f5; }
+  .side--two__title {
+    font-size: 1.5rem;
+    font-family: "karlaSB", sans-serif;
+    margin-top: 1rem; }
+  .side--two__date {
+    color: #10d869;
+    font-family: "karlaI", sans-serif;
+    font-size: 1.4rem; }
+  .side--two__events {
+    color: #00a650;
+    font-family: "karlaBI", sans-serif;
+    font-size: 1.9rem; }
+
+.side--three__img--alpha {
+  background-image: url(../../img/niara-10.png);
+  background-position: center;
+  max-width: 100%;
+  height: 15rem;
+  background-size: cover;
+  margin-top: -.5rem; }
+
+.side--three__img--beta {
+  background-image: url(../../img/niara-11.png);
+  background-position: bottom;
+  max-width: 100%;
+  height: 15rem;
+  background-size: cover; }
+
+.side--three__text {
+  font-family: "karlaSB", sans-serif; }
+
+.tv__image--1 {
+  background-image: url(../../img/niara-1.png);
+  height: 44rem;
+  background-size: cover;
+  background-position: center; }
+
+.tv__text--1 {
+  background-color: #00a650; }
+
+.tv__image--2--alpha {
+  background-image: url(../../img/niara-2.png);
+  height: 21rem;
+  background-size: cover;
+  background-position: center; }
+
+.tv__image--2--beta {
+  background-image: url(../../img/niara-3.png);
+  height: 21rem;
+  background-size: cover;
+  background-position: center;
+  margin-top: 2rem; }
+
+.dropdown {
+  margin-top: 3rem; }
+  .dropdown .dropdown-category {
+    font-size: 2rem;
+    border: 2px solid #10d869;
+    border-radius: 0;
+    box-shadow: none; }
+  .dropdown .dropdown-category::after {
+    margin-left: 8rem; }
+  .dropdown .dropdown-item {
+    border: none; }
+
+.category-text {
+  color: #fff;
+  background-color: #00a650; }
+
+.niara--4--img {
+  background-image: url(/img/niara-4.png);
+  width: 100%;
+  height: 15rem;
+  background-position: center;
+  background-size: cover; }
+
+.niara--5--img {
+  background-image: url(/img/niara-5.png);
+  width: 100%;
+  height: 15rem;
+  background-position: center;
+  background-size: cover; }
+
+.niara--6--img {
+  background-image: url(/img/niara-6.png);
+  width: 100%;
+  height: 15rem;
+  background-position: bottom;
+  background-size: cover; }
+
+.niara--7--img {
+  background-image: url(/img/niara-7.png);
+  width: 100%;
+  height: 15rem;
+  background-position: center;
+  background-size: cover; }
+
+.niara__text--1 {
+  font-family: "karlaSB", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  letter-spacing: -1px; }
+
+.niara__text--2 {
+  font-size: 1.5rem;
+  font-family: "karlaI", sans-serif;
+  color: #10d869; }
+
+.tv-text-i {
+  font-family: "karlaB", sans-serif; }
+
+.tv-text-ii {
+  font-family: "karlaEL", sans-serif; }
+
+.tv-text-iii {
+  font-family: "karlaB", sans-serif;
+  font-size: 1.3rem; }
+
+.tv-text-iv {
+  font-family: "karlaEL", sans-serif;
+  font-size: 1.3rem; }
+
+section.church {
+  padding: 0; }
+  section.church .church-text-1 {
+    font-size: 1.2rem;
+    letter-spacing: -1px; }
+  section.church .church-text-2 {
+    line-height: 1.6;
+    font-family: "karlaEL", sans-serif;
+    letter-spacing: 1px; }
+
+section.church-body {
+  margin: 0 19rem; }
+  @media only screen and (max-width: 767px) {
+    section.church-body {
+      margin: 0; } }
+  section.church-body .test img {
+    height: 15rem;
+    object-fit: cover; }
+    section.church-body .test img:hover {
+      border: 3px solid #00a650;
+      opacity: 0.3;
+      transition: all 0.5s; }
+  section.church-body .test:hover .now-playing {
+    opacity: 1;
+    transition: all 0.5s; }
+  section.church-body .karla-b {
+    font-family: "karlaSB", sans-serif; }
+  section.church-body .now-playing {
+    opacity: 0; }
+
+.dropdown-qty {
+  width: 5rem; }
+  .dropdown-qty .dropdown-qty-no {
+    color: green; }
+
+.green {
+  height: 4px;
+  width: 12rem;
+  background-color: #00a650;
+  margin: 0 auto; }
+
 .svg-green {
   filter: invert(69%) sepia(24%) saturate(5791%) hue-rotate(98deg) brightness(102%) contrast(87%); }
+
+.svg-white {
+  filter: invert(100%) sepia(0%) saturate(17%) hue-rotate(20deg) brightness(106%) contrast(106%); }
+
+.svg-small {
+  width: 2.5rem;
+  height: 2.5rem; }
+
+.text-green {
+  color: #10d869; }
 
 .text-black {
   color: #111111; }
 
-@media only screen and (max-width: 62.5em) {
+.bg-grey {
+  background-color: #f5f5f5; }
+
+.bg-green {
+  background-color: #00a650; }
+
+.bg-black {
+  background-color: #111111; }
+
+@media only screen and (max-width: 1200px) {
   .nav-item {
     margin: 0;
+    padding: 0;
     font-size: 1rem; } }
 
 .nav-link {
-  font-family: "karlaEB", sans-serif;
-  color: #141414 !important; }
+  font-family: "karlaSB", sans-serif;
+  color: #141414 !important;
+  transition: all .2s; }
   .nav-link:hover {
     border-bottom: 3px solid #000; }
+  @media only screen and (max-width: 1200px) {
+    .nav-link {
+      margin: 0 !important;
+      line-height: 1; } }
 
 .nav-icon {
   width: 2.5rem;
@@ -463,37 +635,50 @@ body {
 .nav__logo {
   height: 5rem; }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 1200px) {
   .nav {
     font-size: 1.2rem; } }
 
 .active {
-  border-bottom: 4px solid #000; }
+  border-bottom: 3px solid #000; }
 
 .footer {
   margin-top: 5rem;
   font-family: "oswaldR", sans-serif; }
   .footer ul {
     margin-bottom: 0; }
+  @media only screen and (max-width: 992px) {
+    .footer__logo {
+      order: 3; } }
   .footer__text {
     font-size: 1.4rem;
     margin-top: 1.9rem;
     margin-bottom: 0;
     text-decoration: none;
     color: #111111; }
-    .footer__text:not(last-child) {
-      margin-right: 1.8rem; }
     .footer__text:hover {
       color: #111111; }
-  .footer__logo {
-    width: 60%;
-    margin-right: 0; }
   .footer__icon {
-    width: 12%;
-    margin-right: 1rem; }
-  .footer__social {
-    margin-top: 1.5rem;
-    margin-left: 5rem; }
+    width: 1.3rem; }
+    .footer__icon:not(last-child) {
+      margin-right: 1rem; }
+  @media only screen and (max-width: 992px) {
+    .footer__social {
+      margin-top: 0 !important; } }
+  .footer__links {
+    margin: 0 2rem;
+    column-gap: 2rem; }
+    @media only screen and (max-width: 1200px) {
+      .footer__links {
+        column-gap: 1rem; } }
+    @media only screen and (max-width: 992px) {
+      .footer__links {
+        flex-direction: column;
+        align-items: center; } }
+  @media only screen and (max-width: 992px) {
+    .footer__content {
+      flex-direction: column;
+      align-items: center; } }
 
 .copyright-text {
   font-size: 1rem; }
@@ -530,11 +715,13 @@ body {
 .lifeblood__caption--one {
   font-family: "karlaSB", sans-serif;
   font-size: 2.5rem;
-  line-height: 1; }
+  line-height: 1;
+  margin-top: 1rem; }
 
 .lifeblood__caption--two {
   font-family: "karlaSB", sans-serif;
-  line-height: 1; }
+  line-height: 1;
+  margin-top: 1rem; }
 
 .lifeblood__btn {
   color: #fff;
@@ -562,10 +749,23 @@ body {
   background-size: cover; }
 
 .lifeblood__img--two {
-  height: 35rem;
+  max-width: 100%;
+  height: auto;
   background-image: url(../../img/rectangle25.png);
   background-repeat: no-repeat;
   background-size: cover; }
+  .lifeblood__img--two__alpha {
+    font-family: "karlaSB", sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+    padding: 6rem 1.5rem; }
+  .lifeblood__img--two__beta {
+    padding-left: 1.5rem;
+    color: #141414; }
+    .lifeblood__img--two__beta .red-vertical {
+      width: 3px;
+      height: 2rem;
+      background-color: #ff0000; }
 
 .lifeblood__img--four {
   transform: scale(1.5); }
@@ -577,3 +777,8 @@ body {
 
 .lifeblood--overflow {
   overflow: hidden; }
+
+.red-vertical {
+  width: 3px;
+  height: 2rem;
+  background-color: #ff0000; }

@@ -1,10 +1,97 @@
 .main-content   {
     padding: 2rem 10rem;
 
-    @media screen and (max-width: $bp-large)    {
+    @media screen and (max-width: $mobile_width)    {
         padding: 2rem 0;
     }
+
+    @media screen and (max-width: $medium_width)    {
+        padding: 0;
+    }
 }
+
+
+
+.sales   {
+
+
+    &__sub  {
+        
+    
+
+        &--alpha    {
+            background-color: $grey-light-one;
+            height: 26rem;
+            position: relative;
+        }
+
+        &--title    {
+            font-family: $karlaSB;
+            font-size: 2rem;
+        }
+
+        &--price   {
+            color: $green-light-two;
+            font-family: $oswaldL;
+        }
+
+        &--cart {
+            font-family: $karlaB;
+            font-size: 1.7rem;
+            color: $green-light-two;
+            opacity: 0;
+            transform: translateY(-3.5rem);
+    
+            &--svg  {
+                height: 1.6rem;
+                margin-top: -.4rem;
+                filter: invert(69%) sepia(24%) saturate(5791%) hue-rotate(98deg) brightness(102%) contrast(87%);
+            }
+        }
+
+        &--view {
+            font-size: 3rem;
+            color: $color-white;
+            background-color: $green-light-three;
+            opacity: 0;
+    
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover &--alpha   {
+            border: 2px solid $green-light-two;
+        }
+
+        &:hover &--cart   {
+            opacity: 1;
+            transition: all .2s;
+        }
+    
+        &:hover &--price   {
+            opacity: 0;
+            transition: all .2s;
+        }
+    
+        &:hover &--view   {
+            opacity: 1;
+            transition: all .2s;
+        }
+        
+        &:hover &--img {
+            opacity: 0.1;
+            transform: scale(1.2);
+            transition: all .2s;
+        }
+
+        a   {
+            text-decoration: none;
+        }
+    }
+}
+
 
 
 
@@ -16,7 +103,7 @@
 }
 
 .categories {
-    font-family: $karlaB;
+    font-family: $karlaSB;
     font-size: 1.7rem;
     background-color: $grey-light-one;
 
@@ -40,9 +127,9 @@
 .mailing    {
     
     &__text--one    {
-        margin-top: 15rem;
+        margin-top: 10rem;
         font-family: $playfairB;
-        font-size: 3.5rem;
+        font-size: 3rem;
         color: $color-black-two;
     }
 
@@ -77,10 +164,12 @@
     &__head {
         font-family: $oswaldR;
         font-size: 4rem;
+        padding-top: 1rem;
         padding-bottom: .5rem;
         margin-bottom: 2rem;
-        //border-bottom: 3px solid $color-black-one;
-        text-decoration: underline;
+        border-bottom: 4px solid $color-black-one;
+        width: 44%;
+        margin: auto;
     }
 
     &--one  {
@@ -89,9 +178,10 @@
         &__img  {
             background-image: url(../../img/niara-8.png);
             max-width: 100%;
-            height: 17rem;
+            height: 15rem;
             background-position: center;
             background-size: cover;
+            margin-top: 1.5rem;
         }
 
         &__ng   {
@@ -112,6 +202,7 @@
         &__title    {
             font-size: 1.5rem;
             font-family: $karlaSB;
+            margin-top: 1rem;
 
         }
 
@@ -138,6 +229,7 @@
                 max-width: 100%;
                 height: 15rem;
                 background-size: cover;
+                margin-top: -.5rem;
             }
 
             &--beta {
@@ -156,4 +248,147 @@
 }
 
 
+.tv {
 
+    &__image--1   {
+        background-image: url(../../img/niara-1.png);
+        height: 44rem;
+        background-size: cover;
+        background-position: center;
+        //position: relative;
+    }
+
+    &__text--1  {
+        background-color: $green-light-three;
+    }
+
+    &__image--2 {
+
+        &--alpha        {
+            background-image: url(../../img/niara-2.png);
+            height: 21rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--beta        {
+            background-image: url(../../img/niara-3.png);
+            height: 21rem;
+            background-size: cover;
+            background-position: center;
+            margin-top: 2rem;
+        }
+    }
+
+    
+}
+.dropdown{
+    margin-top: 3rem;
+
+    .dropdown-category {
+        font-size: 2rem;
+        border:  2px solid $green-light-two;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .dropdown-category::after{
+        margin-left: 8rem;
+        // background-image: url(/img/svg/triangle-left.svg);
+        // width: 2rem;
+        // height: 2rem;
+    
+    }
+    .dropdown-item {
+        border:  none;
+    
+    }
+}
+
+
+.category-text  {
+    color: $color-white;
+    background-color: $green-light-three;
+}
+
+.niara  {
+
+    &--4    {
+
+        &--img  {
+            background-image: url(/img/niara-4.png);
+            width: 100%;
+            height: 15rem;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &--5    {
+
+        &--img  {
+            background-image: url(/img/niara-5.png);
+            width: 100%;
+            height: 15rem;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &--6    {
+
+        &--img  {
+            background-image: url(/img/niara-6.png);
+            width: 100%;
+            height: 15rem;
+            background-position: bottom;
+            background-size: cover;
+        }
+    }
+
+    &--7    {
+
+        &--img  {
+            background-image: url(/img/niara-7.png);
+            width: 100%;
+            height: 15rem;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__text {
+       
+        
+        &--1    {
+            font-family: $karlaSB;
+            font-size: 1.7rem;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        &--2    {
+            font-size: 1.5rem;
+            font-family: $karlaI;
+            color: $green-light-two;
+        }
+    }
+}
+
+
+.tv-text-i  {
+    font-family: $karlaB;
+}
+
+.tv-text-ii {
+    font-family: $karlaEL;
+}
+
+.tv-text-iii  {
+    font-family: $karlaB;
+    font-size: 1.3rem;
+}
+
+.tv-text-iv {
+    font-family: $karlaEL;
+    font-size: 1.3rem;
+}
